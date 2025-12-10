@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* for themes it's important to use THE SAME variable names */
+.light-theme {
+  --bg: #f6f0f0;
+  --bg-deep: #fefcfc;
+  --text: #32373b;
+  --primary: #c83e4d;
+  --secondary: #f4b860;
+}
+.dark-theme {
+  --bg: #4a5859;
+  --bg-deep: #32373b;
+  --text: #fff7f7;
+  --primary: #c83e4d;
+  --secondary: #f4b860;
+}
+
+.app {
+  min-height: 100dvh;
+  display: flex;
+  color: var(--text);
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  padding: 16px;
+  background-color: var(--bg);
+  max-height: 100dvh;
+  overflow-y: auto;
+}
+.nav-link{
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  background-color: rgba(0,0,0,0.1);
+  width: 100%;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.nav-link.active{
+  background-color: rgba(0,0,0,0.3);
+}
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-deep);
+}
