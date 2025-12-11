@@ -51,6 +51,16 @@ export default function Examples(){
 
     <h2 className="example-heading">Search by role</h2>
     <RoleFilter refresh={getAllPeople}/>
+
+    <h2 className="example-heading">Problems with this app</h2>
+    <ol>
+        <li>We have to pass around the getAllPeople function to refresh items when something changes</li>
+        <li>Data between search and all list can easilly get out of sync when you update/delete items</li>
+        <ul>
+            <li>It's not using a single source of truth, values get copied and out of sync</li>
+        </ul>
+    </ol>
+    <p>Solution: create context that will be the source of data for the other components</p>
     </>
     )
 }
