@@ -1,0 +1,26 @@
+.example-heading{
+    width: 100%;
+    border-bottom: 1px solid var(--text);
+}
+.people-display{
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content min-content;
+    gap: 16px;
+}
+
+.add-person-form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    > label{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 800;
+
+        > span{
+            width: 80px;
+        }
+    }
+}
