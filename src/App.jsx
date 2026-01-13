@@ -5,12 +5,14 @@ import Instructions from './pages/Instructions/Instructions';
 import Examples from './pages/Examples/Examples';
 import Task_01 from './pages/task_01/task_01';
 import Task_02 from './pages/Task_02/Task_02';
+import User_Tasks from './pages/User_Task/User_Task';
 
 // add components here to auto generate page links in nav + connect route
 const pages = {
   "examples" : <Examples/>,
   "ToDo App" : <Task_01/>,
-  "task_02" : <Task_02/>
+  "task_02" : <Task_02/>,
+  "User Task" : <User_Tasks/>
 }
 
 function App() {
