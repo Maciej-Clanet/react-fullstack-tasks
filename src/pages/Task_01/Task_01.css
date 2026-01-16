@@ -1,0 +1,27 @@
+.all-tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.task{
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.del-btn{
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-weight: 800;
+
+    margin-left: auto;
+    display: none;
+}
+.task:hover .del-btn{
+    display: block;
+}
